@@ -1,4 +1,4 @@
-package com.iflippie.level4__example
+package com.iflippie.level4__example.ui
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -11,7 +11,9 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.iflippie.level4__example.repositories.ReminderRepository
+import com.iflippie.level4__example.R
+import com.iflippie.level4__example.database.ReminderRepository
+import com.iflippie.level4__example.model.Reminder
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -25,7 +27,8 @@ const val ADD_REMINDER_REQUEST_CODE = 100
 class MainActivity : AppCompatActivity() {
 
     private val reminders = arrayListOf<Reminder>()
-    private val reminderAdapter = ReminderAdapter(reminders)
+    private val reminderAdapter =
+        ReminderAdapter(reminders)
     private lateinit var reminderRepository: ReminderRepository
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,7 +37,8 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         setTitle(R.string.app_name)
 
-        reminderRepository = ReminderRepository(this)
+        reminderRepository =
+            ReminderRepository(this)
 
         //Test adds
 //        reminders.add(Reminder("ok"))
@@ -52,7 +56,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun startAddActivity() {
         val intent = Intent(this, AddActivity::class.java)
-        startActivityForResult(intent, ADD_REMINDER_REQUEST_CODE)
+        startActivityForResult(intent,
+            ADD_REMINDER_REQUEST_CODE
+        )
     }
 
     // addReminder method

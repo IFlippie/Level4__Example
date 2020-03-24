@@ -1,7 +1,7 @@
-package com.iflippie.level4__example.dao
+package com.iflippie.level4__example.database
 
 import androidx.room.*
-import com.iflippie.level4__example.Reminder
+import com.iflippie.level4__example.model.Reminder
 
 @Dao
 interface ReminderDao {

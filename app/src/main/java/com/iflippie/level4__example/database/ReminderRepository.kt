@@ -1,9 +1,7 @@
-package com.iflippie.level4__example.repositories
+package com.iflippie.level4__example.database
 
 import android.content.Context
-import com.iflippie.level4__example.Reminder
-import com.iflippie.level4__example.ReminderRoomDatabase
-import com.iflippie.level4__example.dao.ReminderDao
+import com.iflippie.level4__example.model.Reminder
 
 class ReminderRepository(context: Context) {
 

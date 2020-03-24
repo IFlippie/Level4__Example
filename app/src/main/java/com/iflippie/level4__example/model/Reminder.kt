@@ -1,4 +1,4 @@
-package com.iflippie.level4__example
+package com.iflippie.level4__example.model
 
 import android.os.Parcelable
 import androidx.room.ColumnInfo
