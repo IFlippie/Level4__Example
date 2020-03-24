@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Level4__Example</string>
     <string name="action_settings">Settings</string>
+    <string name="et_reminderText">Reminder</string>
+    <string name="tv_reminderAdd">Add Reminder</string>
     <string name="title_activity_add">AddActivity</string>
 </resources>

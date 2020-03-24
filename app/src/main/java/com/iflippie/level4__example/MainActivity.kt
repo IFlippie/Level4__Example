@@ -32,11 +32,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-        //setTitle(R.string.app_name)
+        setTitle(R.string.app_name)
 
         reminderRepository = ReminderRepository(this)
-        reminders.add(Reminder("ok"))
-        reminders.add(Reminder("boomer"))
+
+        //Test adds
+//        reminders.add(Reminder("ok"))
+//        reminders.add(Reminder("boomer"))
 
         initViews()
         fab.setOnClickListener {
